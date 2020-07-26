@@ -36,7 +36,6 @@ require("./config/passport")(passport);
 
 // Routes
 app.use("/users", users);
-app.use("/admins", admins);
 // start server
 const port = process.env.NODE_ENV === 'production' ? (process.env.PORT || 80) : 4000;
 const server = app.listen(port, function () {
