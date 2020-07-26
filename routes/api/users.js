@@ -109,7 +109,7 @@ router.post("/login", (req, res) => {
 
 // admin apis
 
-router.post("/registera", (req, res) => {
+router.post("/signup", (req, res) => {
   // Form validation
 
   const { errors, isValid } = validateRegisterInput(req.body);
@@ -147,7 +147,7 @@ router.post("/registera", (req, res) => {
 // @route POST api/users/login
 // @desc Login user and return JWT token
 // @access Public
-router.post("/logina", (req, res) => {
+router.post("/signin", (req, res) => {
   // Form validation
 
   const { errors, isValid } = validateLoginInput(req.body);

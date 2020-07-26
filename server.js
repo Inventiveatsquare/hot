@@ -4,7 +4,6 @@ const bodyParser = require("body-parser");
 const passport = require("passport");
 
 const users = require("./routes/api/users");
-const admins = require("./routes/api/admins");
 
 const app = express();
 
